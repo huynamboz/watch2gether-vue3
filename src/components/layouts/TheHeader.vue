@@ -23,7 +23,7 @@
     <div class="flex items-center gap-2">
       <img class="w-[25px] h-[25px] cursor-pointer mx-2" src="@/assets/icons/noti.svg" alt="" />
       <div class="flex items-center gap-2 relative">
-        <PopupProfile v-if="isShowPopupProfile" @close="closePopupProfile" />
+        <PopupProfile v-if="isShowPopupProfile" v-touch-outside="closePopupProfile" @close="closePopupProfile" />
         <img
           v-if="!authStore.isLoggedIn || (authStore.isLoggedIn && !authStore.user.avatar)"
           class="rounded-full w-[35px] h-[35px] cursor-pointer"
@@ -38,7 +38,10 @@
           alt=""
           @click="isShowPopupProfile = true"
         />
-        <div v-if="authStore.isLoggedIn || (authStore.isLoggedIn && authStore.value.user)" class="flex relative max-[500px]:hidden">
+        <div
+          v-if="authStore.isLoggedIn || (authStore.isLoggedIn && authStore.value.user)"
+          class="flex relative max-[500px]:hidden"
+        >
           <div class="flex cursor-pointer" @click="isShowPopupProfile = true">
             <p>{{ authStore.user.name }}</p>
             <img src="@/assets/icons/drop-down.svg" alt="" />
@@ -48,7 +51,7 @@
     </div>
   </div>
   <!-- popup -->
-  <PopupSearch v-if="isShowPopupSearch" @closePopup="closePopupSearch" />
+  <PopupSearch v-if="isShowPopupSearch" v-touch-outside="closePopupSearch" />
 </template>
 <script setup>
 import { ref } from 'vue'
@@ -65,6 +68,7 @@ const closePopupSearch = () => {
 }
 
 const closePopupProfile = () => {
+  console.log('close')
   isShowPopupProfile.value = false
 }
 </script>

@@ -9,9 +9,11 @@
   "dependencies": {
     "@heroicons/vue": "^2.0.18",
     "@kyvg/vue3-notification": "^3.0.2",
+    "@videojs-player/vue": "^1.0.0",
     "@vue-hero-icons/outline": "^1.7.2",
     "apexcharts": "^3.37.1",
     "axios": "^1.5.0",
+    "video.js": "^8.5.2",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6",
     "vue3-apexcharts": "^1.4.1"

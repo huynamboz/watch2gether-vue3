@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 left-0 w-[100vw] h-[100vh] flex justify-center z-50" @click.stop="$emit('closePopup')">
+  <div class="fixed top-0 left-[50%] transform translate-x-[-50%] flex justify-center z-50">
     <div
       class="max-[500px]:w-[90%] w-[500px] h-fit min-h-6 mt-3 bg-[#161616] rounded-lg p-2 relative shadow-lg"
       @click.stop=""
