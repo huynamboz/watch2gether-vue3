@@ -1,6 +1,6 @@
 <template>
-  <div class="absolute top-[32px] right-0">
-    <div class="fixed w-[100vw] h-[100vh] z-50 top-0 left-0" @click="$emit('close')"></div>
+  <div class="absolute top-[32px] right-0" @click.stop="">
+    <!-- <div class="fixed w-[100vw] h-[100vh] z-50 top-0 left-0" @click="$emit('close')"></div> -->
     <div
       v-if="authStore.isLoggedIn"
       class="relative z-[60] flex flex-col w-[200px] h-[100px] border-[1px] rounded-[10px] bg-[#121213] border-[#363636] p-2"
