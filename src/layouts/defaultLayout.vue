@@ -14,7 +14,8 @@
 
 <script setup>
 import TheHeader from '@/components/layouts/TheHeader.vue'
-import { authStore } from '@/stores/auth.store'
+import { useAuthStore } from '@/stores/auth.store'
+const authStore = useAuthStore()
 import { onBeforeMount } from 'vue'
 onBeforeMount(() => {
   console.log('default')

@@ -13,8 +13,9 @@
     "@vue-hero-icons/outline": "^1.7.2",
     "apexcharts": "^3.37.1",
     "axios": "^1.5.0",
+    "pinia": "^2.1.6",
     "video.js": "^8.5.2",
-    "vue": "^3.2.47",
+    "vue": "^3.3.4",
     "vue-router": "^4.1.6",
     "vue3-apexcharts": "^1.4.1"
   },
