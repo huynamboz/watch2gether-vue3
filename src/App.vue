@@ -6,6 +6,7 @@ const layoutMeta = computed(() => {
   return route.meta.layout
 })
 const layout = computed(() => {
+  console.log(layoutMeta.value)
   return (layoutMeta.value || 'default') + '-layout'
 })
 </script>

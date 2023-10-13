@@ -55,8 +55,8 @@
 </template>
 <script setup>
 import { ref } from 'vue'
-import { authStore } from '@/stores/auth.store'
-
+import { useAuthStore } from '@/stores/auth.store'
+const authStore = useAuthStore()
 import PopupSearch from './PopupSearch.vue'
 import PopupProfile from './PopupProfile.vue'
 

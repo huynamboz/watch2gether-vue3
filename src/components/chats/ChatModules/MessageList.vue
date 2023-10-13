@@ -9,49 +9,49 @@ const messages = ref([
     content: 'Hello welcome to our watch together, lets have fun!',
   },
   {
-    id: 1,
+    id: 2,
     sender_id: 2,
     name: 'Anony',
     content: 'hello!',
   },
   {
-    id: 1,
+    id: 3,
     sender_id: '650dd25dac436b0553bb215f',
     name: 'Bot W2GH',
     content: 'wtf!',
   },
   {
-    id: 1,
+    id: 4,
     sender_id: 1,
     name: 'Bot W2GH',
     content: 'Hello welcome to our watch together, lets have fun!',
   },
   {
-    id: 1,
+    id: 5,
+    sender_id: '650dd25dac436b0553bb215f',
+    name: 'Bot W2GH',
+    content: 'Hello welcome to our watch together, lets have fun!',
+  },
+  {
+    id: 6,
     sender_id: 1,
     name: 'Bot W2GH',
     content: 'Hello welcome to our watch together, lets have fun!',
   },
   {
-    id: 1,
+    id: 7,
     sender_id: 1,
     name: 'Bot W2GH',
     content: 'Hello welcome to our watch together, lets have fun!',
   },
   {
-    id: 1,
+    id: 8,
     sender_id: 1,
     name: 'Bot W2GH',
     content: 'Hello welcome to our watch together, lets have fun!',
   },
   {
-    id: 1,
-    sender_id: 1,
-    name: 'Bot W2GH',
-    content: 'Hello welcome to our watch together, lets have fun!',
-  },
-  {
-    id: 1,
+    id: 9,
     sender_id: 1,
     name: 'Bot W2GH',
     content: 'Hello welcome to our watch together, lets have fun!',
@@ -59,7 +59,7 @@ const messages = ref([
 ])
 </script>
 <template>
-  <div class="flex flex-col overflow-auto gap-1 pb-2">
+  <div class="flex flex-col overflow-auto gap-2 pb-2">
     <div v-for="message in messages" :key="message.id">
       <MessageContent :message="message" />
     </div>

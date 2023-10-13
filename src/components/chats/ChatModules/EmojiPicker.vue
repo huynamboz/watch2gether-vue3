@@ -53,13 +53,15 @@ const category_emojis = (category) => {
 
 .emoji_picker,
 .picker_container {
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
 }
 
 .picker_container {
   position: relative;
   padding: 1rem;
   overflow: auto;
+  padding-right: 0;
   z-index: 1;
 }
 

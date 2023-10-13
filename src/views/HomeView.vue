@@ -4,10 +4,20 @@
       <VideoLoader />
     </div>
     <ChatHandler />
-  </div>
+  </div> {{ layout }}
 </template>
 
 <script setup>
 import VideoLoader from '@/components/videos/VideoLoader.vue'
 import ChatHandler from '@/components/chats/ChatHandler.vue'
+import { computed } from 'vue'
+import { RouterView, useRoute } from 'vue-router'
+const route = useRoute()
+const layoutMeta = computed(() => {
+  return route.meta
+})
+const layout = computed(() => {
+  console.log(layoutMeta.value)
+  return (layoutMeta.value.layout || 'default') + '-layout'
+})
 </script>

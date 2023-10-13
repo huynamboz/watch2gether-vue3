@@ -136,7 +136,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { initAuthStore } from '@/stores/auth.store'
+import { initAuthStore } from '@/stores'
 import { loginApi, loginGGApi } from '@/services/auth.service'
 import { useNotification } from '@kyvg/vue3-notification'
 const notification = useNotification()
